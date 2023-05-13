@@ -1,0 +1,225 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.18.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: KeyL 8615880171269, www.sofegj.com, LIC=D0D7S-LEF77-EVA1R-KBE1A-TT55R-6U3X5
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.18
+Toolchain Path:  D:\Keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.18
+Dialog DLL:      DARMSTM.DLL V1.65.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\Keil\KeilProject\MDKProject\项目\象棋\USER\LCD.uvprojx
+Project File Date:  10/11/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'D:\Keil\ARM\ARMCC\Bin'
+Build target 'LCD'
+compiling system_stm32f10x.c...
+compiling stm32f10x_it.c...
+compiling main.c...
+..\HARDWARE\EXIT\exti.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+check.h(7): warning:  #1295-D: Deprecated declaration generalLine - give arg types
+  int8_t generalLine();
+main.c(51): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				write_Chinese(sX, sY, '??', DARKBLUE, Libbuttom, lengthCH2);
+main.c(52): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  				write_Chinese(sX + lengthCH2, sY, '效', DARKBLUE, Libbuttom, lengthCH2);
+main.c(72): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  							write_Chinese(sX, sY, '??', BLACK, Libbuttom, lengthCH2);
+main.c(74): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  							write_Chinese(sX, sY, '??', RED, Libbuttom, lengthCH2);
+main.c(76): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  						write_Chinese(sX + lengthCH2, sY, '方', CYAN, Libbuttom, lengthCH2);
+main.c(77): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  						write_Chinese(sX + lengthCH2 * 2, sY, '胜', CYAN, Libbuttom, lengthCH2);
+main.c(84): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  					write_Chinese(sX, sY, '将', TURN ? BLACK : RED, Libbuttom, lengthCH2);
+main.c(85): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  					write_Chinese(sX + lengthCH2, sY, '??', TURN ? BLACK : RED, Libbuttom, lengthCH2);
+main.c(101): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  			write_Chinese(sX, sY, '??', DARKBLUE, Libbuttom, lengthCH2);
+main.c(102): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  			write_Chinese(sX + lengthCH2, sY, '效', DARKBLUE, Libbuttom, lengthCH2);
+main.c(146): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  			write_Chinese(sX, sY, '将', TURN ? BLACK : RED, Libbuttom, lengthCH2);
+main.c(147): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  			write_Chinese(sX + lengthCH2, sY, '??', TURN ? BLACK : RED, Libbuttom, lengthCH2);
+main.c: 14 warnings, 0 errors
+compiling check.c...
+check.h(7): warning:  #1295-D: Deprecated declaration generalLine - give arg types
+  int8_t generalLine();
+check.c(381): warning:  #177-D: variable "noUse" was declared but never referenced
+      int8_t noUse;
+check.c(382): warning:  #177-D: variable "changeBuffer" was declared but never referenced
+      ChangeBuffer changeBuffer;
+check.c: 3 warnings, 0 errors
+compiling displayChess.c...
+compiling chess.c...
+check.h(7): warning:  #1295-D: Deprecated declaration generalLine - give arg types
+  int8_t generalLine();
+chess.c(34): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  	{'車',0,0,blackCAMP,car,ALIVE},//0
+chess.c(35): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',1,0,blackCAMP,horse,ALIVE},//1
+chess.c(36): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',2,0,blackCAMP,elephant,ALIVE},//2
+chess.c(37): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'士',3,0,blackCAMP,guard,ALIVE},//3
+chess.c(38): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'将',4,0,blackCAMP,general,ALIVE},//4
+chess.c(39): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'士',5,0,blackCAMP,guard,ALIVE},//5
+chess.c(40): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',6,0,blackCAMP,elephant,ALIVE},//6
+chess.c(41): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',7,0,blackCAMP,horse,ALIVE},//7
+chess.c(42): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'車',8,0,blackCAMP,car,ALIVE},//8
+chess.c(43): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',1,2,blackCAMP,cannon,ALIVE},//9
+chess.c(44): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',7,2,blackCAMP,cannon,ALIVE},//10
+chess.c(45): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',0,3,blackCAMP,soldier,ALIVE},//11
+chess.c(46): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',2,3,blackCAMP,soldier,ALIVE},//12
+chess.c(47): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',4,3,blackCAMP,soldier,ALIVE},//13
+chess.c(48): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',6,3,blackCAMP,soldier,ALIVE},//14
+chess.c(49): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',8,3,blackCAMP,soldier,ALIVE},//15
+chess.c(50): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',0,6,redCAMP,soldier,ALIVE},//16
+chess.c(51): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',2,6,redCAMP,soldier,ALIVE},//17
+chess.c(52): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',4,6,redCAMP,soldier,ALIVE},//18
+chess.c(53): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',6,6,redCAMP,soldier,ALIVE},//19
+chess.c(54): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',8,6,redCAMP,soldier,ALIVE},//20
+chess.c(55): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',1,7,redCAMP,cannon,ALIVE},//21
+chess.c(56): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',7,7,redCAMP,cannon,ALIVE},//22
+chess.c(57): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'车',0,9,redCAMP,car,ALIVE},//23
+chess.c(58): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',1,9,redCAMP,horse,ALIVE},//24
+chess.c(59): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',2,9,redCAMP,elephant,ALIVE},//25
+chess.c(60): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'士',3,9,redCAMP,guard,ALIVE},//26
+chess.c(61): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'帅',4,9,redCAMP,general,ALIVE},//27
+chess.c(62): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'士',5,9,redCAMP,guard,ALIVE},//28
+chess.c(63): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',6,9,redCAMP,elephant,ALIVE},//29
+chess.c(64): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'??',7,9,redCAMP,horse,ALIVE},//30
+chess.c(65): warning:  #2548-D: multicharacter character literal (potential portability problem)
+      {'车',8,9,redCAMP,car,ALIVE}//31
+chess.c: 33 warnings, 0 errors
+compiling lcd.c...
+compiling font.c...
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(11): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese32[] = {'车','車','??','??','??','士','将','帅','??','??','??'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c(12): warning:  #2548-D: multicharacter character literal (potential portability problem)
+  const unsigned int Chinese64[] = {'??','效','将','??','??','??','方','??','胜'};
+font.c: 20 warnings, 0 errors
+compiling exti.c...
+..\HARDWARE\EXIT\exti.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\EXIT\exti.c: 1 warning, 0 errors
+compiling beep.c...
+..\HARDWARE\BEEP\beep.c(20): warning:  #1-D: last line of file ends without a newline
+  }
+..\HARDWARE\BEEP\beep.c: 1 warning, 0 errors
+compiling 24cxx.c...
+compiling myiic.c...
+compiling ctiic.c...
+compiling w25qxx.c...
+compiling spi.c...
+compiling ft5206.c...
+compiling gt9147.c...
+compiling ott2001a.c...
+compiling touch.c...
+assembling startup_stm32f10x_hd.s...
+compiling delay.c...
+compiling core_cm3.c...
+compiling sys.c...
+compiling usart.c...
+compiling misc.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_spi.c...
+linking...
+Program Size: Code=47068 RO-data=16904 RW-data=756 ZI-data=1884  
+FromELF: creating hex file...
+"..\OBJ\LCD.axf" - 0 Error(s), 72 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Keil\KeilProject\MDKProject\项目\象棋\USER\RTE
+  D:\Keil\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:09
+</pre>
+</body>
+</html>

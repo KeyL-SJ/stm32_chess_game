@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "lcd.h": "c",
+        "sys.h": "c",
+        "stm32f10x.h": "c",
+        "displaychess.h": "c",
+        "fstream": "c",
+        "istream": "c",
+        "ostream": "c",
+        "system_error": "c",
+        "typeinfo": "c",
+        "limits": "c",
+        "chess.h": "c",
+        "exti.h": "c",
+        "delay.h": "c",
+        "usart.h": "c",
+        "touch.h": "c",
+        "check.h": "c"
+    }
+}
